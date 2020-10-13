@@ -1,11 +1,13 @@
 import express from 'express';
 
+import './database/connection';
+
 const app = express();
 
-app.get('/', (req, res) => {
-    res.json({
-        "name": "Stefano Paulo"
-    });
+app.use(express.json());
+
+app.get('/users', (req, res) => {
+    return res.json({ "message": "Hello Wolrd" });
 });
 
 app.listen(3333);
