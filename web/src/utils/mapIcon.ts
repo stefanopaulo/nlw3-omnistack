@@ -9,5 +9,5 @@ const mapIcon = Leaflet.icon({
     iconAnchor: [29, 68],
     popupAnchor: [0, -60]
 });
-
+ 
 export default mapIcon;
